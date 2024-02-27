@@ -55,6 +55,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="addfile2.cs" />
     <Compile Include="add_file_after_review.cs" />
     <Compile Include="Delete.cs" />
     <Compile Include="Rename.cs" />
