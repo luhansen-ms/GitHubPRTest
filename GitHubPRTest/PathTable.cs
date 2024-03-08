@@ -13,7 +13,7 @@ using System.Text;
 namespace GitHubPRTest
 {
     /// <summary>
-    /// Recursion type when performing operations on the path table. test
+    /// Recursion type when performing operations on the path table. different line top of file
     /// </summary>
     internal enum PathTableRecursion
     {
@@ -79,11 +79,6 @@ namespace GitHubPRTest
         /// <param name="overwrite"></param>
         public void Add(String token, T referencedObject, bool overwrite = false)
         {
-            if (token == null)
-            {
-                throw new ArgumentNullException(nameof(token));
-            }
-
             RequireSorted();
 
             token = CanonicalizeToken(token);
@@ -1054,7 +1049,7 @@ namespace GitHubPRTest
                 }
             }
 
-            public int StartIndex;
+            public int StartIndex; // different line end of file
             public int EndIndex;
         }
     }
