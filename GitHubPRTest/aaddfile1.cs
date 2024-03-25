@@ -8,5 +8,8 @@ namespace GitHubPRTest
 {
     internal class aaddfile1
     {
+        // add
+        // add
+        // add
     }// last 2
 }// last 1
