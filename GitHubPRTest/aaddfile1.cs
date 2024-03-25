@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace GitHubPRTest
 {
+    // add inline
+    // add inline
+    // add inline
     internal class aaddfile1
     {
         // add
