@@ -58,6 +58,7 @@
     <Compile Include="addfile2.cs" />
     <Compile Include="add_file_after_review.cs" />
     <Compile Include="Delete.cs" />
+    <Compile Include="nocomments.cs" />
     <Compile Include="Rename.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
