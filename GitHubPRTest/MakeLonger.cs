@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GitHubPRTest
 {
-    internal class MakeLonger
+    internal class MakeLonger // change merge base
     {
         public MakeLonger()
         {
