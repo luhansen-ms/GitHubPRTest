@@ -13,6 +13,18 @@ using System.Threading.Tasks;
 
 
 // foo
+// foo
+// foo
+// foo
+// foo
+// foo
+// foo
+// foo
+// foo
+// foo
+// foo
+// foo
+// foo
 
 namespace GitHubPRTest
 {
@@ -21,3 +33,4 @@ namespace GitHubPRTest
         // add file 3
     }
 }
+// afterbrace
