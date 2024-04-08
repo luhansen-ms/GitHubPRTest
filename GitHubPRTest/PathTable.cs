@@ -2,7 +2,7 @@
 // PathTable.cs
 
 //
-// Copyright (c) Microsoft Corporation Itration Next
+// Copyright (c) Microsoft Corporation
 //************************************************************************************************
 using System;
 using System.Collections.Generic;
@@ -41,7 +41,7 @@ namespace GitHubPRTest
     /// <summary>
     /// Data structure that provides a mechanism for maintaining a sorted table of file paths.
     /// </summary>
-    /// <typeparam name="T"></typeparam>
+    /// <typeparam name="T">Type of the value in the table.</typeparam>
     internal class PathTable<T>
     {
         public PathTable(char tokenSeparator, bool caseInsensitive)
@@ -79,11 +79,6 @@ namespace GitHubPRTest
         /// <param name="overwrite"></param>
         public void Add(String token, T referencedObject, bool overwrite = false)
         {
-            if (token == null)
-            {
-                throw new ArgumentNullException(nameof(token));
-            }
-
             RequireSorted();
 
             token = CanonicalizeToken(token);
@@ -434,6 +429,12 @@ namespace GitHubPRTest
             }
         }
 
+        /// <summary>
+        /// Emumerate parents of the given token.
+        /// </summary>
+        /// <param name="token">key in the table</param>
+        /// <returns>Lazy enumeration of the parents of a key.</returns>
+        /// <exception cref="ArgumentNullException">Occurs if token is null</exception>
         public IEnumerable<PathTableTokenAndValue<T>> EnumParents(String token)
         {
             if (token == null)

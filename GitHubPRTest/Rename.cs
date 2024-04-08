@@ -9,6 +9,6 @@ namespace GitHubPRTest
     internal class Rename
     {
         public string OldName { get; set; }
-        public string NewName { get; set; }
+        public string Renamed { get; set; }
     }
 }
