@@ -58,7 +58,7 @@
     <Compile Include="aaddfile1.cs" />
     <Compile Include="AddFIle.cs" />
     <Compile Include="Delete.cs" />
-    <Compile Include="Renamed.cs" />
+    <Compile Include="Rename.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
