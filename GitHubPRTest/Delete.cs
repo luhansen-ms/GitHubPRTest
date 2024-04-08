@@ -8,6 +8,5 @@ namespace GitHubPRTest
 {
     internal class Delete
     {
-        // edit
     }
 }
