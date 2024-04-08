@@ -57,6 +57,7 @@
     </ApplicationDefinition>
     <Compile Include="aaddfile1.cs" />
     <Compile Include="AddFIle.cs" />
+    <Compile Include="Delete.cs" />
     <Compile Include="Renamed.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
