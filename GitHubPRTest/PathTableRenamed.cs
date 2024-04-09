@@ -42,9 +42,9 @@ namespace GitHubPRTest
     /// Data structure that provides a mechanism for maintaining a sorted table of file paths.
     /// </summary>
     /// <typeparam name="T"></typeparam>
-    internal class PathTable<T>
+    internal class PathTableRenamed<T>
     {
-        public PathTable(char tokenSeparator, bool caseInsensitive)
+        public PathTableRenamed(char tokenSeparator, bool caseInsensitive)
         {
             _tokenSeparator = tokenSeparator;
             _tokenSeparatorString = new String(tokenSeparator, 1);
