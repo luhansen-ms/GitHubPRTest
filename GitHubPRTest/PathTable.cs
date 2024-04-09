@@ -2,7 +2,7 @@
 // PathTable.cs
 
 //
-// Copyright (c) Microsoft Corporation Itration Next
+// Copyright (c) Microsoft Corporation
 //************************************************************************************************
 using System;
 using System.Collections.Generic;
