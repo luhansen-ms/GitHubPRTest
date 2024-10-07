@@ -23,6 +23,7 @@ namespace GitHubPRTest
         public MainWindow()
         {
             InitializeComponent();
+            _ = new PathTable<string>('/', caseInsensitive: true);
         }
     }
 }

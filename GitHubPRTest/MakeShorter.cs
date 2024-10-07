@@ -8,9 +8,5 @@ namespace GitHubPRTest
 {
     internal class MakeShorter
     {
-        public MakeShorter()
-        {
-            Console.WriteLine("make shorter");
-        }
     }
 }
