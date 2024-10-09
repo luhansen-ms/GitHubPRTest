@@ -6,9 +6,7 @@ using System.Threading.Tasks;
 
 namespace GitHubPRTest
 {
-    internal class Rename
+    internal class nocomments
     {
-        public string OldName { get; set; }
-        public string NewName { get; set; }
     }
 }

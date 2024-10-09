@@ -55,8 +55,12 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="addfile2.cs" />
+    <Compile Include="addfile3.cs" />
+    <Compile Include="add_file_after_review.cs" />
     <Compile Include="Delete.cs" />
-    <Compile Include="Rename.cs" />
+    <Compile Include="nocomments.cs" />
+    <Compile Include="Renamed.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
