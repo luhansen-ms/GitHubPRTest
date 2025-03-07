@@ -10,7 +10,9 @@ namespace GitHubPRTest
     {
         public MakeLonger()
         {
-            Console.WriteLine("make longer");
+            Console.WriteLine("make longer 1");
+            Console.WriteLine("make longer 2");
+            Console.WriteLine("make longer 3");
         }
     }
 }
