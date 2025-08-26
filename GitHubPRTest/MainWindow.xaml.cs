@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,9 +21,30 @@ namespace GitHubPRTest
     /// </summary>
     public partial class MainWindow : Window
     {
+        public ObservableCollection<FruitInventory> FruitItems { get; set; }
+
         public MainWindow()
         {
             InitializeComponent();
+            InitializeFruitInventory();
+            FruitInventoryGrid.ItemsSource = FruitItems;
+        }
+
+        private void InitializeFruitInventory()
+        {
+            FruitItems = new ObservableCollection<FruitInventory>
+            {
+                new FruitInventory("Apples", 150),
+                new FruitInventory("Bananas", 89),
+                new FruitInventory("Oranges", 76),
+                new FruitInventory("Strawberries", 42),
+                new FruitInventory("Grapes", 124),
+                new FruitInventory("Pineapples", 18),
+                new FruitInventory("Mangoes", 33),
+                new FruitInventory("Blueberries", 67),
+                new FruitInventory("Peaches", 51),
+                new FruitInventory("Watermelons", 12)
+            };
         }
     }
 }

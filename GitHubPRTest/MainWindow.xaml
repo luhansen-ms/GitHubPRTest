@@ -5,8 +5,34 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GitHubPRTest"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Fruit Inventory" Height="450" Width="800">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
         
+        <!-- Header -->
+        <TextBlock Grid.Row="0" Text="Fruit Inventory" 
+                   FontSize="24" FontWeight="Bold" 
+                   HorizontalAlignment="Center" 
+                   Margin="10"/>
+        
+        <!-- Inventory Table -->
+        <DataGrid Grid.Row="1" x:Name="FruitInventoryGrid" 
+                  AutoGenerateColumns="False" 
+                  IsReadOnly="True"
+                  GridLinesVisibility="All"
+                  HeadersVisibility="Column"
+                  Margin="20">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Fruit Name" 
+                                    Binding="{Binding FruitName}" 
+                                    Width="*"/>
+                <DataGridTextColumn Header="Count" 
+                                    Binding="{Binding Count}" 
+                                    Width="100"/>
+            </DataGrid.Columns>
+        </DataGrid>
     </Grid>
 </Window>
