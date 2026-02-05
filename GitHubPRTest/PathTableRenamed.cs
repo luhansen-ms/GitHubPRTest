@@ -1,8 +1,10 @@
 ﻿//************************************************************************************************
 // PathTable.cs
-
+// add
+// to
+// file
 //
-// Copyright (c) Microsoft Corporation Itration Next
+// Copyright (c) Microsoft Corporation
 //************************************************************************************************
 using System;
 using System.Collections.Generic;
@@ -42,9 +44,9 @@ namespace GitHubPRTest
     /// Data structure that provides a mechanism for maintaining a sorted table of file paths.
     /// </summary>
     /// <typeparam name="T"></typeparam>
-    internal class PathTable<T>
+    internal class PathTableRenamed<T>
     {
-        public PathTable(char tokenSeparator, bool caseInsensitive)
+        public PathTableRenamed(char tokenSeparator, bool caseInsensitive)
         {
             _tokenSeparator = tokenSeparator;
             _tokenSeparatorString = new String(tokenSeparator, 1);
