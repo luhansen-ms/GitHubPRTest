@@ -55,7 +55,6 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Delete.cs" />
     <Compile Include="ManyFiles\PathTable1.cs" />
     <Compile Include="ManyFiles\PathTable10.cs" />
     <Compile Include="ManyFiles\PathTable100.cs" />
