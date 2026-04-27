@@ -1,5 +1,5 @@
 //************************************************************************************************
-// PathTable456.cs
+// PathTableCopy456.cs
 //
 // Copyright (c) Microsoft Corporation
 //************************************************************************************************
@@ -30,9 +30,9 @@ namespace GitHubPRTest
         public readonly T Value;
     }
 
-    internal class PathTable456<T>
+    internal class PathTableCopy456<T>
     {
-        public PathTable456(char tokenSeparator, bool caseInsensitive)
+        public PathTableCopy456(char tokenSeparator, bool caseInsensitive)
         {
             m_tokenSeparator = tokenSeparator;
             m_tokenSeparatorString = new String(tokenSeparator, 1);
@@ -81,7 +81,7 @@ namespace GitHubPRTest
             {
                 if (!overwrite)
                 {
-                    throw new ArgumentException("The token already exists in the PathTable456.", "token");
+                    throw new ArgumentException("The token already exists in the PathTableCopy456.", "token");
                 }
 
                 m_list[index] = new PathTableRow<T>(token, parentPathLength, 0, referencedObject);
@@ -203,7 +203,7 @@ namespace GitHubPRTest
                         {
                             if (!duplicateHandler(m_list[i - 1].Token, m_list[i - 1].ReferencedObject, m_list[i].ReferencedObject))
                             {
-                                throw new ArgumentException("Duplicate tokens exist in the PathTable456.");
+                                throw new ArgumentException("Duplicate tokens exist in the PathTableCopy456.");
                             }
                             else
                             {
@@ -463,7 +463,7 @@ namespace GitHubPRTest
         /// <summary>
         /// Enumerate all of the differences between the two path tables.
         /// </summary>
-        public static IEnumerable<PathTableTokenAndValue456<T>> EnumAllDifferences(PathTable456<T> pt1, PathTable456<T> pt2)
+        public static IEnumerable<PathTableTokenAndValue456<T>> EnumAllDifferences(PathTableCopy456<T> pt1, PathTableCopy456<T> pt2)
         {
             // This algorithm requires sorted PathTables for the iterative walk to work correctly
             pt1?.RequireSorted();
