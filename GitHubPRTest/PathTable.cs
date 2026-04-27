@@ -17,7 +17,7 @@ namespace GitHubPRTest
     /// </summary>
     internal enum PathTableRecursion
     {
-        Full = 2,
+        Full = 2, // This comment was added in the PR. Comments can be created here.
         None = 0,
         OneLevel = 1
     }
